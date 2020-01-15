@@ -1,0 +1,15 @@
+<app-navigation-bar></app-navigation-bar>
+
+<div class="container-fluid h-100">
+  <div class="row h-100 flex-xl-nowrap" style="background-color: #e8e6e4">
+    <main class="col-12 d-flex flex-column align-center mt-3" role="main">
+      <h1 class="mx-auto mt-0">Naslov</h1>
+      <ul class="list-inline justify-content-center mx-auto border" style="background-color: #fcf7f3;">
+        <div *ngFor="let ad of ads" class="p-3">
+          <app-ad [ad]="ad"></app-ad>
+        </div>
+      </ul>
+    </main>
+
+  </div>
+</div>

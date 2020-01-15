@@ -1,0 +1,13 @@
+<div class="d-flex">
+  <div class="media border p-2 pr-3 w-75 justify-content-center mx-auto" style="background-color: #fff6e0;">
+    <ng-container *ngIf="ad && author">
+      <img src={{author.image}} alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+      <div class="media-body " style="display:inline">
+        <h3 class="mt-0 mb-0 media-heading">{{ad.title}}</h3>
+        <small class="text-muted"><i>{{author.getName()}}</i></small>
+        <p style="word-break: break-all;" class="">{{ad.description}}</p>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
