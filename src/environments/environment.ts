@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyCsASTuDI1L9KdPgiCtXCN2kh-WbI5ZO78",
-    authDomain: "beehuman-ffdfb.firebaseapp.com",
-    databaseURL: "https://beehuman-ffdfb.firebaseio.com",
-    projectId: "beehuman-ffdfb",
+    apiKey: "***",
+    authDomain: "***",
+    databaseURL: "****",
+    projectId: "***",
     storageBucket: "beehuman-ffdfb.appspot.com",
     messagingSenderId: "36920078482",
-    appId: "1:36920078482:web:749b3aaf88579ec336364b"
+    appId: "***"
   }
 };
 
