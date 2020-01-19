@@ -3,9 +3,9 @@ import { Ad } from './ad.model';
 
 export class User implements Deserializable {
 
-  public id: number;
-  public firstName: string;
-  public lastName: string;
+  public id: string;
+  public name: string;
+  public surname: string;
   public image: string;
 
   deserialize(input: any): this {
@@ -15,6 +15,6 @@ export class User implements Deserializable {
   }
 
   getName() {
-    return this.firstName + " " + this.lastName;
+    return this.name + " " + this.surname;
   }
 }

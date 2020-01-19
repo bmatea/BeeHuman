@@ -4,6 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ListViewComponent } from './list-view/list-view.component';
+import { VoluneeringComponent } from './voluneering/voluneering.component';
+import { DonationsComponent } from './donations/donations.component';
 
 
 const routes: Routes = [
@@ -21,7 +23,11 @@ const routes: Routes = [
   },
   {
     path: 'volunteering',
-    component: ListViewComponent
+    component: VoluneeringComponent
+  },
+  {
+    path: 'donations',
+    component: DonationsComponent
   },
 
 ];

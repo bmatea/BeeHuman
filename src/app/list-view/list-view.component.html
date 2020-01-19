@@ -1,15 +1,23 @@
 <app-navigation-bar></app-navigation-bar>
 
 <div class="container-fluid h-100">
-  <div class="row h-100 flex-xl-nowrap" style="background-color: #e8e6e4">
-    <main class="col-12 d-flex flex-column align-center mt-3" role="main">
-      <h1 class="mx-auto mt-0">Naslov</h1>
+  <div class="row flex-xl-nowrap" style="background-color: #e8e6e4">
+    <div class="col-2 d-flex flex-column " style="background-color: rgba(255, 226, 163, 0.993);">
+      <button type="button" class="btn btn-success mt-3 mb-3 text-white" (click)="open()">Add request</button>
+      <h4 class="sidebar-header pt-3 text-muted mx-auto "><u>Pending requests</u></h4>
+      <ul class="list-inline justify-content-center mx-auto " >
+        <div *ngFor="let ad of pending" class="p-3">
+          <app-pending [ad]="ad" (updateFun)="getAds()"></app-pending>
+        </div>
+      </ul>
+    </div>
+    <main class="col-9 d-flex flex-column align-center mt-3 mx-auto" role="main">
+      <h1 class="mx-auto mt-0 ">{{this.title}}</h1>
       <ul class="list-inline justify-content-center mx-auto border" style="background-color: #fcf7f3;">
         <div *ngFor="let ad of ads" class="p-3">
-          <app-ad [ad]="ad"></app-ad>
+          <app-ad [ad]="ad" [title]="'' + this.title"></app-ad>
         </div>
       </ul>
     </main>
-
   </div>
 </div>

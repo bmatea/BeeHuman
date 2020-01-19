@@ -18,6 +18,9 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { NewAdFormComponent } from './new-ad-form/new-ad-form.component';
+import { PendingComponent } from './pending/pending.component';
+import { DonationsComponent } from './donations/donations.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     NavigationBarComponent,
     AdComponent,
     ListViewComponent,
-    VoluneeringComponent
+    VoluneeringComponent,
+    NewAdFormComponent,
+    PendingComponent,
+    DonationsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +48,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [NewAdFormComponent]
 })
 export class AppModule { }

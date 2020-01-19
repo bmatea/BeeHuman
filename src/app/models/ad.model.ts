@@ -2,9 +2,9 @@ import { Deserializable } from './deserializable.model';
 
 export class Ad implements Deserializable {
 
-  public id: number;
+  public id: string;
   public title: string;
-  public author: number;
+  public author: string;
   public description: string;
 
   deserialize(input: any): this {
