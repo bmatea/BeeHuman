@@ -25,10 +25,11 @@ export class ListViewComponent implements OnInit {
 
   public getAds() {
     if(this.naslov === "Donation Ads") {
+      console.log("log");
       this.adsService.getAds().subscribe(ads => this.ads = ads);
       this.adsService.getPendingDonations().subscribe(ads => this.pending = ads);
     }
-    else if(this.naslov === "Volunteering Ads") {
+    if(this.naslov === "Volunteering Ads") {
       this.adsService.getVolunteering().subscribe(ads => this.ads = ads);
       this.adsService.getPendingVolunteering().subscribe(ads => this.pending = ads);
     }

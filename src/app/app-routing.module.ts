@@ -6,6 +6,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ListViewComponent } from './list-view/list-view.component';
 import { VoluneeringComponent } from './voluneering/voluneering.component';
 import { DonationsComponent } from './donations/donations.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 
 const routes: Routes = [
@@ -28,6 +30,14 @@ const routes: Routes = [
   {
     path: 'donations',
     component: DonationsComponent
+  },
+  {
+    path: 'blog',
+    component: BlogComponent
+  },
+  {
+    path: 'blogDetail/:id',
+    component: BlogDetailComponent
   },
 
 ];

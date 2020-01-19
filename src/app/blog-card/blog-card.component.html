@@ -1,0 +1,11 @@
+<div class="card shadow-lg">
+  <img class="card-img" src={{blogPost.image}} style="filter: brightness(70%);">
+  <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+    <h4 class="card-title">{{blogPost.title}}</h4>
+    <h6 class="card-subtitle mb-2"><small>{{blogPost.subtitle}}</small></h6>
+    <p class="card-text">{{blogPost.description}} </p>
+    <div class="link d-flex">
+      <a [routerLink]="['/blogDetail', blogPost.id]" class="card-link text-warning">Read More</a>
+    </div>
+  </div>
+</div>

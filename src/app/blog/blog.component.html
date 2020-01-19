@@ -1,0 +1,14 @@
+<app-navigation-bar></app-navigation-bar>
+
+<div class="container-fluid h-100">
+  <div class="row flex-xl-nowrap" style="background-image:url('../../assets/pattern.jpg'); ">
+    <main class="col-9 d-flex flex-column align-center mt-3 mx-auto" role="main">
+      <h1 class="mx-auto mt-0 ">Blog Posts</h1>
+      <div class="card-deck">
+        <div *ngFor="let blogPost of posts" class="p-3">
+          <app-blog-card [blogPost]="blogPost"></app-blog-card>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

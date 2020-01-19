@@ -21,6 +21,9 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NewAdFormComponent } from './new-ad-form/new-ad-form.component';
 import { PendingComponent } from './pending/pending.component';
 import { DonationsComponent } from './donations/donations.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogCardComponent } from './blog-card/blog-card.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { DonationsComponent } from './donations/donations.component';
     VoluneeringComponent,
     NewAdFormComponent,
     PendingComponent,
-    DonationsComponent
+    DonationsComponent,
+    BlogComponent,
+    BlogCardComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,

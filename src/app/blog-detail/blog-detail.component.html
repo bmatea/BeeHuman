@@ -1,0 +1,36 @@
+<app-navigation-bar></app-navigation-bar>
+
+<div class="p-2" style="background-color: rgb(209, 209, 207);">
+  <header >
+    <div class="overlay"></div>
+    <div class="d-flex justify-content-center">
+      <img *ngIf="post" src="{{post.image}}" style="filter: brightness(70%); height: 600px; ;" class="w-75 center-block shadow">
+    </div>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 ">
+          <h1 class="display-3">{{post.title}}</h1>
+          <p class="lead mb-0 text-muted">{{post.subtitle}}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum lacinia sapien a maximus. Aliquam erat volutpat. In varius tempus purus, molestie dapibus sem. Morbi sagittis leo justo, nec gravida metus condimentum eget. Suspendisse in tincidunt neque. Phasellus venenatis nibh quis eros condimentum tempus. Vivamus massa massa, pellentesque vel turpis a, laoreet bibendum nunc.
+
+            Fusce eget velit sit amet nunc tristique tincidunt. Praesent ante velit, ornare id maximus vel, feugiat eu enim. Cras id faucibus turpis, ut dapibus lectus. Donec posuere massa nisl, eget interdum eros tincidunt vitae. Maecenas laoreet vehicula consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam pellentesque, ipsum vel venenatis tincidunt, orci mi eleifend ligula, sit amet posuere justo magna eu quam. Aenean tincidunt efficitur condimentum. Nam dictum sollicitudin diam, sed congue magna vehicula nec. Duis consectetur quis urna in pharetra. Curabitur bibendum tincidunt dignissim. Duis non semper mauris, et rhoncus sem. Nullam semper semper lacus.
+
+            Cras cursus ultricies sem, vel porttitor mauris fringilla sed. Curabitur dignissim ullamcorper risus vitae commodo. Fusce venenatis gravida neque, eleifend malesuada augue pulvinar in. Sed fringilla rhoncus iaculis. Pellentesque ornare lectus non dui scelerisque, eget interdum metus placerat. Suspendisse ac convallis turpis, ac placerat arcu. Donec congue sed erat non lobortis. Mauris tellus nulla, tristique eget tempor semper, vulputate eget felis. Etiam nisl lacus, cursus vitae vestibulum a, pharetra vel libero. Nunc vestibulum, tellus non tempus laoreet, arcu mi posuere purus, ut dapibus eros neque ut lectus. Aenean eu accumsan arcu. Praesent ut justo dolor. Aliquam eget semper sem.
+
+            Maecenas ullamcorper urna eu ante rhoncus maximus. Etiam ultricies ligula malesuada, tempor augue dapibus, tincidunt risus. Donec id diam et nibh aliquam ultrices eleifend a tellus. Aenean odio augue, varius vel varius ac, auctor eget nisl. Phasellus sollicitudin ut lacus nec pretium. Nullam efficitur leo ut justo luctus dignissim sit amet in libero. Suspendisse potenti. Etiam porta lacus elit, ut sagittis dolor consequat nec.
+
+            Integer tellus magna, consectetur quis accumsan sed, lobortis eget ante. Vivamus leo mi, maximus vel rhoncus eget, placerat sit amet purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce semper aliquam consectetur. Proin dapibus tortor vel nisl convallis, vehicula ultricies augue placerat. Curabitur rhoncus libero a libero suscipit tincidunt. Sed nisl metus, maximus et condimentum quis, egestas vel eros.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -7,7 +7,7 @@
       <h4 class="sidebar-header pt-3 text-muted mx-auto "><u>Pending requests</u></h4>
       <ul class="list-inline justify-content-center mx-auto " >
         <div *ngFor="let ad of pending" class="p-3">
-          <app-pending [ad]="ad" (updateFun)="getAds()"></app-pending>
+          <app-pending [ad]="ad" [title]=this.title (updateFun)="getAds()"></app-pending>
         </div>
       </ul>
     </div>

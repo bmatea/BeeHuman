@@ -43,6 +43,7 @@ export class Service {
   }
 
   public getPendingVolunteering(): Observable<Ad[]> {
+    console.log("pending");
     return this.httpService.get<Ad[]>(`http://localhost:3000/pending_volunteering`).pipe(
       map(data => Object.keys(data).map(key => new Ad().deserialize({...data[key], id: key })) )
     );
@@ -51,6 +52,7 @@ export class Service {
   public approveAd(ad: Ad, title: string) {
     let json_Ad = {...ad };
     console.log(JSON.stringify(json_Ad));
+    console.log(title);
     title==="Donation Ads" ?
     fetch(`http://localhost:3000/donations`, {
       method: "PUT",
@@ -102,6 +104,7 @@ export class Service {
   }
 
   public denyAd(ad: Ad, title: string) {
+    console.log(title);
     title === "Donation Ads" ?
     fetch(`http://localhost:3000/pending_donations/${ad.id}`, {
       method: "DELETE",

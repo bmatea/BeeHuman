@@ -29,12 +29,27 @@ export class PendingComponent implements OnInit {
       this.closeResult = `Closed with: ${result}`;
       if(this.closeResult === `Closed with: Approve click`)
         {
-          this.approve();
+          //this.approve();
+          this.service.approveAd(this.ad, this.title);
+          if(this.title === "Donation Ads") {
+            this.service.getAds();
+          }
+          if(this.title === "Volunteering Ads") {
+            this.service.getVolunteering();
+          }
           this.updateFun.emit();
         }
-        else if(this.closeResult === `Closed with: Deny click`)
+      if(this.closeResult === `Closed with: Deny click`)
         {
-          this.deny();
+          //this.deny.bind(this);
+          this.service.denyAd(this.ad, this.title);
+          console.log(this);
+          if(this.title === "Donation Ads") {
+            this.service.getAds();
+          }
+          if(this.title === "Volunteering Ads") {
+            this.service.getVolunteering();
+          }
           this.updateFun.emit();
         }
     }, (reason) => {
@@ -42,15 +57,26 @@ export class PendingComponent implements OnInit {
     });
   }
 
-  approve() {
-    this.service.approveAd(this.ad, this.title);
-    this.service.getAds();
-  }
+  // approve() {
+  //   this.service.approveAd(this.ad, this.title);
+  //   if(this.title === "Donation Ads") {
+  //     this.service.getAds();
+  //   }
+  //   if(this.title === "Volunteering Ads") {
+  //     this.service.getVolunteering();
+  //   }
+  // }
 
-  deny() {
-    this.service.denyAd(this.ad, this.title);
-    this.service.getAds();
-  }
+  // deny() {
+  //   console.log(this.title);
+  //   this.service.denyAd(this.ad, this.title);
+  //   if(this.title === "Donation Ads") {
+  //     this.service.getAds();
+  //   }
+  //   if(this.title === "Volunteering Ads") {
+  //     this.service.getVolunteering();
+  //   }
+  // }
 
   getDismissReason(reason: any) {
     if (reason === ModalDismissReasons.ESC) {
