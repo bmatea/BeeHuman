@@ -18,7 +18,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Demo  
 
-![]()
+![Landing page](beeDashboard.png)
+
+![Volunteering ads](BeeHumanAds.png)
 
 ## Further help
 
