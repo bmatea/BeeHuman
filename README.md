@@ -1,4 +1,4 @@
-# BeeHuman
+# BeeHuman :honeybee:
 
 A Software engineering course project. Represents a prototype for a donations and volunteering platform created in stages according to the Agile methods. 
 The general idea was to create a platform with two separate modules - one for volunteering and one for donations, where users would 
